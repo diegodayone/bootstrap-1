@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+    <title>The most awesome Album Showcase!</title>
+
+    <style>
+        /* EXERCISE 1
+            For all Albums we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+         */
+
+        body {
+            background-color: #181818;
+            color: white;
+        }
+
+        .album {
+            background-color: darkgray;
+            border: 1px solid #ef3d59;
+        }
+
+        .album img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .album .title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .album .artist {
+            font-size: 1.25em;
+        }
+
+        .album .genre {
+            color: #ef3d59;
+        }
+
+        .album .duration {
+            font-weight: bolder;
+        }
+
+        .nav-link {
+            color: #ef3d59;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- EXERCISE 3 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must be linked to every section in your page
+        -->
+
+    <div class="container">
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#favalbums">Fav Albums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#albumreview">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#worstalbum">Worst Album</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tapestry">Link</a>
+            </li>
+        </ul>
+
+
+        <!-- EXERCISE 4
+            Create a Responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller window)
+            - 2 albums per row when you are on a small screen
+        -->
+
+        <section id="favalbums" class="row ">
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="1.jpg">
+                <div class="title">Street Bangerz Volume 3</div>
+                <div class="artist">Gramatik</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="2.jpg">
+                <div class="title">10.000 Days</div>
+                <div class="artist">Tools</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="3.jpg">
+                <div class="title">Fidatevi</div>
+                <div class="artist">Ministri</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="4.jpg">
+                <div class="title">Nevermind</div>
+                <div class="artist">Nirvana</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="5.jpg">
+                <div class="title">In Utero</div>
+                <div class="artist">Nirvana</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="6.jpg">
+                <div class="title">Giovent&ugrave; brucata</div>
+                <div class="artist">Pinguini Tattici Nucleari</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="7.jpg">
+                <div class="title">Telugu Love Songs</div>
+                <div class="artist">Devi Sri Prasad</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="8.jpg">
+                <div class="title">My Life Is Going On</div>
+                <div class="artist">Cecilia Krull</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3 album">
+                <img src="9.jpg">
+                <div class="title">Lateralus</div>
+                <div class="artist">Tools</div>
+            </div>
+        </section>
+
+        <!-- EXERCISE 5
+            Create a section for the album review.
+            Pick one of your fav albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Lenght
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+
+        <section id="albumreview" class="album my-5">
+            <h2>Best Album Ever</h2>
+            <div class="row">
+                <div class="col-md-4 align-self-center">
+                    <img src="2.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="title">10.000 Days</div>
+                    <div class="artist">Tool</div>
+                    <div class="genre">Alternative metal
+                        Progressive metal
+                        Rock sperimentale</div>
+                    <div class="duration">75:52</div>
+                    <ol>
+                        <li>Vicarious – 7:06 </li>
+                        <li> Jambi – 7:28 </li>
+                        <li> Wings for Marie (Part 1) – 6:11</li>
+                        <li> 10,000 Days (Wings Part 2) – 11:13</li>
+                        <li> The Pot – 6:21</li>
+                        <li> Lipan Conjuring – 1:11</li>
+                        <li> Lost Keys (Blame Hofmann) – 3:46</li>
+                        <li> Rosetta Stoned – 11:11 </li>
+                        <li>Intension – 7:21</li>
+                        <li>Right in Two – 8:55</li>
+                        <li>Viginti Tres – 5:02</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXERCISE 6
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+        -->
+
+        <section id="worstalbum" class="album my-5 d-sm-none d-md-block">
+            <h2>Worst Album Ever</h2>
+            <div class="row">
+                <div class="col-md-4 align-self-center">
+                    <img src="10.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="title">Lil boat</div>
+                    <div class="artist">Lil Yachty</div>
+                    <div class="genre">Hip Hop
+                        Trap
+                    </div>
+                    <div class="duration">45:52</div>
+                    <ol>
+                        <li>Vicarious – 7:06 </li>
+                        <li> Jambi – 7:28 </li>
+                        <li> Wings for Marie (Part 1) – 6:11</li>
+                        <li> 10,000 Days (Wings Part 2) – 11:13</li>
+                        <li> The Pot – 6:21</li>
+                        <li> Lipan Conjuring – 1:11</li>
+                        <li> Lost Keys (Blame Hofmann) – 3:46</li>
+                        <li> Rosetta Stoned – 11:11 </li>
+                        <li>Intension – 7:21</li>
+                        <li>Right in Two – 8:55</li>
+                        <li>Viginti Tres – 5:02</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EXERCISE 7
+            Do you have any musician / band you admire or you are fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+
+        <!--Leave it out!-->
+
+
+        <!-- EXERCISE 8
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handle it.
+        -->
+    </div>
+
+    <div class="container-fluid" id="tapestry">
+        <div class="row no-gutters">
+            <div class="col-sm-4">
+                <img class="img-fluid" src="1.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="2.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="3.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="4.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class=" img-fluid" src="5.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="6.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="7.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="8.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="9.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="10.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="1.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="2.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="3.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="4.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="5.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="6.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="7.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="8.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="9.jpg">
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="10.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- EXERCISE 9
+            Implement a footer with some information / social links
+        -->
+
+    <footer>
+        Informations &amp; social links
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
